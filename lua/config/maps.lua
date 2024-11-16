@@ -37,5 +37,9 @@ map("n", "<C-Right>", "<C-w>>")
 map("n", "<C-Up>", "<C-w>+")
 map("n", "<C-Down>", "<C-w>-")
 
+-- UFO
+vim.keymap.set("n", "zN", require("ufo").openAllFolds)
+vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+
 -- Set Current Directory as root
 noremap("n", "<leader>cc", ":exec 'cd' . expand('%:p:h')<CR>")
