@@ -26,6 +26,11 @@ o.inccommand = "split"
 o.splitright = true
 o.splitbelow = true
 o.termguicolors = true
+if vim.env.TERM_PROGRAM == "Apple_Terminal" then
+	vim.schedule(function()
+		vim.opt.termguicolors = false
+	end)
+end
 
 -- UFO
 o.foldcolumn = "1" -- '0' is not bad
