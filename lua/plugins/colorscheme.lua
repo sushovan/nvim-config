@@ -15,6 +15,6 @@ return {
 		--vim.cmd("colorscheme duskfox")
 		--vim.cmd("colorscheme nordfox")
 		--vim.cmd("colorscheme terafox")
-		vim.cmd("colorscheme carbonfox")
+		--vim.cmd("colorscheme carbonfox")
 	end,
 }
