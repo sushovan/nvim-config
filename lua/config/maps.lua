@@ -21,9 +21,17 @@ map("n", "<leader>q", "<CMD>q<CR>")
 map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
 map("n", "<leader>r", "<CMD>Neotree focus<CR>")
 
+-- NeoGit
+map("n", "<leader>g", "<CMD>Neogit kind=floating<CR>")
+
 -- New Windows
 map("n", "<leader>o", "<CMD>vsplit<CR>")
 map("n", "<leader>p", "<CMD>split<CR>")
+
+-- ToggleTerm
+map("n", "<leader>t", "<CMD>ToggleTerm direction=horizontal<CR>")
+map("n", "<leader>tf", "<CMD>ToggleTerm direction=float<CR>")
+map("x", "<leader>ts", "<CMD>ToggleTermSendVisualSelection<CR>'><CR>")
 
 -- Window Navigation
 map("n", "<C-h>", "<C-w>h")
