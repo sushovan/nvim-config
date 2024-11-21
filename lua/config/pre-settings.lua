@@ -26,11 +26,6 @@ o.inccommand = "split"
 o.splitright = true
 o.splitbelow = true
 o.termguicolors = true
-if vim.env.TERM_PROGRAM == "Apple_Terminal" then
-	vim.schedule(function()
-		vim.opt.termguicolors = false
-	end)
-end
 
 -- UFO
 o.foldcolumn = "1" -- '0' is not bad
@@ -41,3 +36,11 @@ o.foldenable = true
 -- List Character
 o.listchars = "trail:-,nbsp:+,tab:▏ ,eol:↴"
 o.list = true
+
+if vim.env.TERM_PROGRAM == "Apple_Terminal" then
+	vim.schedule(function()
+		vim.opt.termguicolors = false
+		-- o.listchars = "trail:-,nbsp:+,tab:␉·,eol:↴"
+		vim.opt.listchars = "trail:-,nbsp:+,tab:┆ ,eol:↴"
+	end)
+end
