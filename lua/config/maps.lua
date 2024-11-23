@@ -22,7 +22,7 @@ map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
 map("n", "<leader>r", "<CMD>Neotree focus<CR>")
 
 -- NeoGit
-map("n", "<leader>g", "<CMD>Neogit kind=floating<CR>")
+map("n", "<leader>ng", "<CMD>Neogit kind=floating<CR>")
 
 -- New Windows
 map("n", "<leader>o", "<CMD>vsplit<CR>")

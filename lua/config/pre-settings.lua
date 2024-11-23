@@ -26,6 +26,8 @@ o.inccommand = "split"
 o.splitright = true
 o.splitbelow = true
 o.termguicolors = true
+o.colorcolumn = "120"
+o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 -- UFO
 o.foldcolumn = "1" -- '0' is not bad
